@@ -111,10 +111,8 @@ section > div:nth-child(1) p {
 }
 
 #social-links-container a:visited {
-  /* Styling for visited links */
   color: white;
 }
-
 #social-links-container a:active {
   /* Styling for active links */
   background-color: var(--green);
