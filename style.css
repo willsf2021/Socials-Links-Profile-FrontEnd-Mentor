@@ -1,0 +1,134 @@
+:root {
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-700-opacity: hsla(0, 0%, 20%, 0.7);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* Resetting and configuring some default HTML styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Setting up the body layout and appearance */
+  height: 97vh;
+  background-color: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  /* Centering content within the main section */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  /* Styling for each section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  row-gap: 24px;
+  padding: 32px;
+  background-color: var(--grey-800);
+}
+
+section p {
+  /* Default paragraph styling within sections */
+  color: white;
+}
+
+a {
+  /* Removing default link underline */
+  text-decoration: none;
+}
+
+section > div:nth-child(1) {
+  /* Styling for the first div within a section */
+  text-align: center;
+}
+
+section > div:nth-child(1) img {
+  /* Styling for images within the first div */
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 16px;
+  transition: transform ease-in 300ms;
+}
+
+section > div:nth-child(1) img:hover {
+  /* Hover effect for images */
+  transform: scale(1.1);
+}
+
+section > div:nth-child(1) h1 {
+  /* Styling for the h1 element within the first div */
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+section > div:nth-child(1) p {
+  /* Styling for the paragraph within the first div */
+  color: var(--green);
+  font-weight: 600;
+}
+
+#social-links-container {
+  /* Styling for the social links container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  width: 100%;
+  font-weight: 600;
+}
+
+#social-links-container a {
+  /* Styling for social links */
+  text-align: center;
+  background-color: var(--grey-700);
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 8px;
+  transition: background-color ease-in 100ms;
+}
+
+#social-links-container a:hover {
+  /* Hover effect for social links */
+  background-color: var(--grey-700-opacity);
+}
+
+#social-links-container a:visited {
+  /* Styling for visited links */
+  color: white;
+}
+
+#social-links-container a:active {
+  /* Styling for active links */
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+.attribution {
+  /* Styling for the attribution text */
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  /* Styling for links within the attribution text */
+  color: var(--green);
+}
